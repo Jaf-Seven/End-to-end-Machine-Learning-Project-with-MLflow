@@ -43,9 +43,4 @@ logging.basicConfig(
 # This allows you to use 'logger' to log messages throughout the project
 logger = logging.getLogger("mlProjectLogger")
 
-# --------------------------------------------
-# Example usage (for testing)
-# --------------------------------------------
-logger.info("Logging setup complete.")
-logger.warning("This is a sample warning message.")
-logger.error("This is a sample error message.")
+
