@@ -1,4 +1,5 @@
-FROM python:3.8-slim-buster
+# ✅ Updated base image to avoid deprecated Debian repositories
+FROM python:3.8-slim-bullseye
 
 # Ensure apt commands don't fail and install awscli cleanly
 RUN apt-get update -y && \
@@ -11,7 +12,11 @@ RUN apt-get update -y && \
 
 WORKDIR /app
 
+# Copy all project files into the container
 COPY . /app
-RUN pip install -r requirements.txt
 
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Set the default command to run your app
 CMD ["python3", "app.py"]
