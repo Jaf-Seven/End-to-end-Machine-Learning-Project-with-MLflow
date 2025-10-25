@@ -21,7 +21,7 @@
 Clone the repository
 
 ```bash
-https://github.com/Jaf-Seven/End-to-end-Machine-Learning-Project-with-MLflow
+https://github.com/Jaf-Seven/ML_deployment.git
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
